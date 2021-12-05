@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
-
 export class UserGreeting extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
-            IsLoggedIn: true
+            IsLoggedIn: false
         }
     }
 
@@ -24,5 +23,4 @@ export class UserGreeting extends Component {
         )*/
     }
 }
-
 export default UserGreeting
