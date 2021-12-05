@@ -18,7 +18,6 @@ export class Form extends Component {
             comments: event.target.value
         })
     }
-
     handleTopicChange = (event) => {
         this.setState({
             topic: event.target.value
@@ -27,6 +26,7 @@ export class Form extends Component {
     //for app to react to the text we added a handler for username &
     //added handler to the comment box too
     //added topics div & handler is added so we are now able to select
+    //adding a submit button but evry time we hit it the data vanishes as default method
     render() {
         return (
             <form>
@@ -47,6 +47,7 @@ export class Form extends Component {
 
                     </select>
                 </div>
+                <button type = "submit" >Submit</button>
             </form>
         )
     }
