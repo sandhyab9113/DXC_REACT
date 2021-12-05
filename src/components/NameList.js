@@ -1,12 +1,11 @@
 import React from 'react'
 
 function NameList() {
-    const names = ['Sandy', 'jaffer', 'bujju','gidda']
+    const names = ['Shaggu', 'Shayi', 'Sony', 'Moin', 'React']
+    const nameList = names.map(name => <h2>{name}</h2>)
     return (
-        <div>
-
-            {names.map(name => <h2>{name}</h2>)}
-        </div>
+        <div>{nameList}</div>
     )
 }
+
 export default NameList
