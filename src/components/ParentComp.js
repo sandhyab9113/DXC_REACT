@@ -2,11 +2,10 @@ import React, { Component } from 'react'
 import PureComp from './PureComp';
 import RegularComp from './RegularComp';
 
-export class ParentComp extends Component {
+class ParentComp extends Component {
     //adding a state property  
     constructor(props) {
         super(props)
-
         this.state = {
             name: 'Shagufta-Parent Component'
         }
@@ -14,7 +13,7 @@ export class ParentComp extends Component {
     //adding a timer 
     componentDidMount() {
     setInterval(() => {
-        this.state.state({
+        this.setState({
             name: 'Shagufta-Parent Component'
         })
 
@@ -31,5 +30,4 @@ export class ParentComp extends Component {
         )
     }
 }
-
 export default ParentComp
