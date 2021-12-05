@@ -21,7 +21,7 @@ function App() {
 
     <div className="App">
 
-      <StyleSheet enabled={false} />
+      <StyleSheet enabled={true} />
 
       <Table />
 
