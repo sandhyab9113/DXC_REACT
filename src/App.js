@@ -6,36 +6,22 @@ import Message from './components/Message';
 import Counter from './components/Counter';
 import ClassClick from './components/ClassClick';
 import FunctionClick from './components/FunctionClick';
-
 import EventBind from './components/EventBind';
-
 import ParentComponent from './components/ParentComponent';
-
 import UserGreeting from './components/UserGreeting';
-
 import NameList from './components/NameList';
-
-
-
-
-
+import Table from './components/Table';
 
 
 function App() {
-
   return (
-
     <div className="App">
-
+      <Table />
       <NameList />
-
       <UserGreeting />
-
       <ParentComponent />
-
       <EventBind />
     </div>
   );
 }
-
 export default App;
