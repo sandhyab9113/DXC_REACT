@@ -1,34 +1,52 @@
-import React, { Component } from 'react'
-export class Form extends Component {
-    constructor(props) {
-        super(props)
+import './App.css';
 
-        this.state = {
-            username: '',
-            comments: ''
-        }
-    }
-    handleUsernameChange = (event) => {
-        this.setState({
-            username: event.target.value
-        })
-    }
-    //for app to react to the text we added a handler for username &
-    //added another div for commets too with a label but the text is not hadled yet
-    render() {
-        return (
-            <form>
-                <div>
-                    <label>username</label>
-                    <input type='text' value={this.state.username} onChange={this.handleUsernameChange} />
-                </div>
-                <div>
-                    <label>comments</label>
-                    <textarea value={this.state.comments}></textarea>
-                </div>
+import EventBind from './components/EventBind';
+import ParentComponent from './components/ParentComponent';
+import UserGreeting from './components/UserGreeting';
+import NameList from './components/NameList';
+import Table from './components/Table';
+import StyleSheet from './components/StyleSheet';
+import Inline from './components/Inline';
 
-            </form>
-        )
-    }
+import './appStyles.css';
+
+import styles from './appStyles.module.css';
+
+import Form from './components/Form';
+
+import { Fragment } from 'react';
+
+import Fragments from './components/Fragments';
+
+
+
+
+
+
+
+function App() {
+
+  return (
+
+    <div className="App">
+
+      <Form />
+
+      <Fragments />
+
+      <h1 className={styles.success}>success</h1>
+
+      <h1 className='error'>error</h1>
+
+      <StyleSheet enabled={true} />
+      <Inline />
+      <Table />
+      <NameList />
+      <UserGreeting />
+      <ParentComponent />
+      <EventBind />
+    </div>
+  );
 }
-export default Form
+
+export default App;
