@@ -8,18 +8,10 @@ import ClassClick from './components/ClassClick';
 import FunctionClick from './components/FunctionClick';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
-
 import UserGreeting from './components/UserGreeting';
-
 import NameList from './components/NameList';
-
 import Table from './components/Table';
-
 import StyleSheet from './components/StyleSheet';
-
-
-
-
 
 
 
@@ -29,7 +21,7 @@ function App() {
 
     <div className="App">
 
-      <StyleSheet />
+      <StyleSheet enabled={false} />
 
       <Table />
 
