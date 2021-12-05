@@ -9,9 +9,18 @@ import FunctionClick from './components/FunctionClick';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
+
 import NameList from './components/NameList';
+
 import Table from './components/Table';
+
 import StyleSheet from './components/StyleSheet';
+
+import Inline from './components/Inline';
+
+
+
+
 
 
 
@@ -22,6 +31,8 @@ function App() {
     <div className="App">
 
       <StyleSheet enabled={true} />
+
+      <Inline />
 
       <Table />
 
