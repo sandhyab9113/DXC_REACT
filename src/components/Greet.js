@@ -1,7 +1,9 @@
 import react from 'react'
 import App from '../App'
 
-function Greet(){
+/* function Greet(){
    return <h1>welcome sandy</h1>
 }
-export default Greet 
+ */
+const Greet = () => <h1>hello dxc</h1>
+export default Greet
