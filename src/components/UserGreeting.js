@@ -4,16 +4,17 @@ export class UserGreeting extends Component {
         super(props)
 
         this.state = {
-            IsLoggedIn: false
+            IsLoggedIn: true
         }
     }
 
     render() {
-        return(
+        return this.state.IsLoggedIn && <div>Welcome Shagufta</div>
+        /*return(
             this.state.IsLoggedIn ?
             <div>Welcome Shagufta</div> :
             <div>Welcome Guest</div>
-        )
+        )*/
         /*let message 
         if (this.state.IsLoggedIn) {
             message = <div>Welcome Shagufta</div>
