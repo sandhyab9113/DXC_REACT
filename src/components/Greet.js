@@ -5,5 +5,13 @@ import App from '../App'
    return <h1>welcome sandy</h1>
 }
  */
-const Greet = () => <h1>hello dxc</h1>
-export default Greet
+const Greet = (props) => {
+    console.log(props);
+    return (
+       <div>
+          <h1> hello  {props.name} you are from {props.college}</h1>
+          {props.children}
+       </div>
+    )
+ }
+ export default Greet
